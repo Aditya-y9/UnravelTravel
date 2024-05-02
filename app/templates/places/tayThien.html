@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Địa danh</title>
+        <title>Places</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
@@ -18,13 +18,13 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
             integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
             integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/places.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
-    
+
         <style>
             .header__background {
                 background-image: url("{{ url_for('static', filename='images/places/b1.jpg') }}");
@@ -48,29 +48,28 @@
                             </li>
                             <li>
                                 <div class="link__dropdown">
-                                    <a class="placePage-header_menu-link" href="{{ url_for('places') }}">Địa danh <span><i class="fas fa-chevron-down"></i></span></a>
+                                    <a class="placePage-header_menu-link" href="{{ url_for('places') }}">Places <span><i class="fas fa-chevron-down"></i></span></a>
 
                                     <div class="dropdown">
                                         <div class="dropdown__item">
-                                            <a href="{{ url_for('places') }}">Tam Đảo</a>
+                                            <a href="{{ url_for('places') }}">Tam Dao</a>
                                         </div>
                                         <div class="dropdown__item">
-                                            <a href="{{ url_for('daiLai') }}">Đại Lải</a>
+                                            <a href="{{ url_for('daiLai') }}">Dai Lai</a>
                                         </div>
                                         <div class="dropdown__item">
-                                            <a href="{{ url_for('damVac') }}">Đầm Vạc</a>
+                                            <a href="{{ url_for('damVac') }}">Dam Vac</a>
                                         </div>
                                         <div class="dropdown__item">
-                                            <a href="{{ url_for('tayThien') }}">Tây Thiên</a>
+                                            <a href="{{ url_for('tayThien') }}">Tay Thien</a>
                                         </div>                                       
                                     </div>
                                 </div>
                                 
                             </li>
-                            <li><a class="placePage-header_menu-link" href="{{ url_for('def_service') }}">Dịch
-                                    Vụ</a>
+                            <li><a class="placePage-header_menu-link" href="{{ url_for('def_service') }}">Services</a>
                             </li>
-                            <li><a class="placePage-header_menu-link" href="{{ url_for('posts') }}">Bài Viết</a>
+                            <li><a class="placePage-header_menu-link" href="{{ url_for('posts') }}">Posts</a>
                             </li>
                             <li><a class="placePage-header_menu-link" href="#">Gis</a></li>
                         </ul>
@@ -94,7 +93,7 @@
         <div class="container">
             <div class="place">
                 <iframe src="https://www.youtube.com/embed/avHk_veUPm4?autoplay=1&mute=1" class="place__video" frameborder="0"></iframe>
-                <h4 class="place__title place__title--heading">Trải nghiệm điểm đến</h4>
+                <h4 class="place__title place__title--heading">Explore Destinations</h4>
                 <div class="place__list">
                     {% for place in tayThien %}
                     
@@ -110,7 +109,7 @@
                                 {{ place.description }} 
                                 <span class="moreText"></span>
                             </p>
-                            <a href="http://dulich24.com.vn/du-lich-huyen-tam-dao/quang-truong-trung-tam-tam-dao-id-7681" class="btn desc" target="_blank">Chi tiết</a>
+                            <a href="http://dulich24.com.vn/du-lich-huyen-tam-dao/quang-truong-trung-tam-tam-dao-id-7681" class="btn desc" target="_blank">Details</a>
                         </div>
                         <div class="slide">
                             <div class="slide__item">

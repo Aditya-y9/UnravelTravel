@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Địa danh</title>
+    <title>Places</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
@@ -51,30 +51,29 @@
                                 </li>
                                 <li>
                                     <div class="link__dropdown">
-                                        <a class="placePage-header_menu-link" href="{{ url_for('places') }}">Địa danh
+                                        <a class="placePage-header_menu-link" href="{{ url_for('places') }}">Places
                                             <span><i class="fas fa-chevron-down"></i></span></a>
 
                                         <div class="dropdown">
                                             <div class="dropdown__item">
-                                                <a href="{{ url_for('places') }}">Tam Đảo</a>
+                                                <a href="{{ url_for('places') }}">Tam Dao</a>
                                             </div>
                                             <div class="dropdown__item">
-                                                <a href="{{ url_for('daiLai') }}">Đại Lải</a>
+                                                <a href="{{ url_for('daiLai') }}">Dai Lai</a>
                                             </div>
                                             <div class="dropdown__item">
-                                                <a href="{{ url_for('damVac') }}">Đầm Vạc</a>
+                                                <a href="{{ url_for('damVac') }}">Dam Vac</a>
                                             </div>
                                             <div class="dropdown__item">
-                                                <a href="{{ url_for('tayThien') }}">Tây Thiên</a>
+                                                <a href="{{ url_for('tayThien') }}">Tay Thien</a>
                                             </div>
                                         </div>
                                     </div>
 
                                 </li>
-                                <li><a class="placePage-header_menu-link" href="{{ url_for('def_service') }}">Dịch
-                                        Vụ</a>
+                                <li><a class="placePage-header_menu-link" href="{{ url_for('def_service') }}">Services</a>
                                 </li>
-                                <li><a class="placePage-header_menu-link" href="{{ url_for('posts') }}">Bài Viết</a>
+                                <li><a class="placePage-header_menu-link" href="{{ url_for('posts') }}">Posts</a>
                                 </li>
                                 <li><a class="placePage-header_menu-link" href="#">Gis</a></li>
                             </ul>
@@ -96,10 +95,10 @@
     <!-- place -->
     <div class="wrapper">
         <div class="container">
-            <div class="place">
+            <div class="place"></div>
                 <iframe src="https://www.youtube.com/embed/GAeBmeYnOIQ?autoplay=1&mute=1" class="place__video"
                     frameborder="0"></iframe>
-                <h4 class="place__title place__title--heading">Trải nghiệm điểm đến</h4>
+                <h4 class="place__title place__title--heading">Explore Destinations</h4>
                 <div class="place__list">
                     {% for place in places %}
 
@@ -115,8 +114,7 @@
                                     {{ place.description }}
                                     <span class="moreText"></span>
                                 </p>
-                                <a href="{{url_for('postDetail', id=place.id_post)}}" class="btn desc">Chi
-                                    tiết</a>
+                                <a href="{{url_for('postDetail', id=place.id_post)}}" class="btn desc">Details</a>
                             </div>
                             <div class="slide">
                                 <div class="slide__item">
