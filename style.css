@@ -120,6 +120,32 @@ nav{
 	padding-left: 4px;
 }
 /*//////////////////////////Header title div\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+.floating-button {
+	position: fixed;
+	bottom: 50px; /* Adjust as needed */
+	right: 90px; /* Adjust as needed */
+	z-index: 999; /* Ensure it's above other content */
+	text-align: center;
+	font-size: 100; /* Increase the font size */
+}
+
+.floating-button button {
+	padding: 25px 50px;
+	background-color: #007bff; /* Button background color */
+	color: #fff; /* Button text color */
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	box-shadow: 20px 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
+}
+
+.floating-button button:hover {
+	background-color: orange; /* Hover background color */
+	transform: scale(1.5); /* Optional: Scale the button */
+
+}
+
 .header-title{
 	position: absolute;
 	text-transform: uppercase;
