@@ -273,7 +273,7 @@ nav{
 }
 .image-set .image-box:hover .image-content{
 	cursor: pointer;
-	height: 25%;
+	height: 60%;
 	transition: 0.5s;
 }
 /*////////////////////top attraction\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/

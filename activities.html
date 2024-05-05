@@ -17,13 +17,14 @@
 	<title>Activities to do</title>
 </head>
 <body>
+
 	<header>
 		<div id="activities-header">
 			<nav>
 				<div class="upper_navbar">
 					<div class="menu1">
 						<ul>
-							<li><a href="main.html">Home</a></li>
+							<li><a href="index.html">Home</a></li>
 							<li><a href="about.html">About Us</a></li>
 						</ul>
 					</div>
@@ -34,7 +35,7 @@
 							<i class="fas fa-bars fa-2x"></i>
 						</div>
 						<div class="logo">
-							<a href="main.html"><img src="images/mylogo-1.png"></a>
+							<a href="index.html"><img src="images/mylogo-1.png"></a>
 						</div>
 						<ul class="dropdown-menu">
 							<li><a href="">What to do<i class="fas fa-caret-down"></i></a>
@@ -67,15 +68,165 @@
 	</header>
 
 	<h1>
-		Your're here : <a href="main.html">Home</a> / Activities
+		Your're here : <a href="index.html">Home</a> / Activities
 	</h1>
+
+	<style>
+		#section1 {
+			background-color: #f1f1f1;
+			width: 100%;
+			height: auto;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		#section2 {
+			background-color: #f1f1f1;
+			width: 100%;
+			height: auto;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		#section3 {
+			background-color: #f1f1f1;
+			width: 100%;
+			height: auto;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		#option2:checked ~ #section2,
+		#option3:checked ~ #section3 {
+			display: block;
+		}
+		#option1:checked ~ #section1 {
+			display: block;
+		}
+		#option1:checked ~ #section2,
+		#option1:checked ~ #section3 {
+			display: none;
+		}
+		#option2:checked ~ #section1,
+		#option2:checked ~ #section3 {
+			display: none;
+		}
+		#option3:checked ~ #section1,
+		#option3:checked ~ #section2 {
+			display: none;
+		}
+		.tabordion {
+			width: 100%;
+			max-width: 1000px;
+			margin: 0 auto;
+			font-family: 'Nunito', sans-serif;
+		}
+		.tabordion input {
+			position: absolute;
+			opacity: 0;
+		}
+		.tabordion label {
+			display: block;
+			padding: 10px 15px;
+			color: #333;
+			font-weight: 300;
+			font-size: 1.2em;
+			background: #f1f1f1;
+			cursor: pointer;
+			border-top: 1px solid #f1f1f1;
+			transition: background 0.1s;
+		}
+		.tabordion label:hover {
+			background: #e9e9e9;
+		}
+		.tabordion article {
+			display: none;
+			background: #f1f1f1;
+			padding: 20px;
+			border-bottom: 1px solid #f1f1f1;
+			position: relative;
+			z-index: 10;
+		}
+		.tabordion article p {
+			font-size: 1.1em;
+			line-height: 1.6em;
+			color: #333;
+		}
+		.tabordion article h1 {
+			font-size: 1.5em;
+			color: #333;
+			margin-bottom: 10px;
+		}
+		.tabordion article img {
+			float: left;
+			margin: 0 20px 20px 0;
+			border-radius: 5px;
+		}
+		#option1:checked ~ #section1 label[for="option1"],
+		#option2:checked ~ #section2 label[for="option2"],
+		#option3:checked ~ #section3 label[for="option3"] {
+			background: #e9e9e9;
+		}
+		#option1:checked ~ #section1 article,
+		#option2:checked ~ #section2 article,
+		#option3:checked ~ #section3 article {
+			display: block;
+		}
+		#option1:checked ~ #section1 article,
+		#option2:checked ~ #section2 article,
+		#option3:checked ~ #section3 article {
+			display: block;
+		}
+		.tabordion input[type="radio"]:checked + label {
+			background: #e9e9e9;
+		}
+		.tabordion input[type="radio"]:checked + label + article {
+			display: block;
+		}
+		.tabordion input[type="radio"]:checked + label + article {
+			display: block;
+		}
+		.tabordion input[type="radio"]:checked + label + article {
+			display: block;
+		}
+		.tabordion input[type="radio"]:checked + label + article {
+			display: block;
+		}
+		.footer {
+
+/* Additional styles to align footer content */
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.lower-footer {
+  background-color: #f2f2f2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.lower-footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Adjustments for the logo in the footer */
+.footer-refs-content-3 img {
+  width: auto;
+  height: 50px; /* Adjust height as needed */
+}
+
+
+	</style>
+
 	<section id="tabordion-sec">
-		<div class="tabordion">
+		<div class="tabordion" style="height: 1720px">
 		  	<section id="section1">
 			    <input type="radio" name="sections" id="option1" checked>
 			    <label for="option1">Heritages</label>
 			    <article>
-			    	<img class="tabordion-img" src="https://worldheritagejourney.com/wp-content/uploads/2020/03/CSTStation.jpg">
+			    	<img class="tabordion-img" src="https://worldheritagejourney.com/wp-content/uploads/2020/03/CSTStation.jpg" height="400px"
 			      	<h1>Heritages in Mumbai</h1>
 			      	<p>
 			      		Mumbai, a city of vibrant cultures and diverse communities, boasts a rich tapestry of heritages that reflect its historical, architectural, and socio-cultural significance. Here are some of the prominent heritages in Mumbai:
@@ -131,6 +282,7 @@
 				</p>
 			    </article>
 		  	</section>
+			<section>
 		  	<section id="section2">
 			    <input type="radio" name="sections" id="option2">
 			    <label for="option2">Ayurveda & Spa</label>
@@ -181,6 +333,7 @@
 			      	<p>
 			      		Mumbai, despite being known for its urban hustle and bustle, also offers a variety of adventurous activities for thrill-seekers. 
 					Here are some exciting adventures to experience in and around Mumbai:
+					<li>
 					<br>
 					1. Trekking in Sanjay Gandhi National Park:
 					<br>
@@ -217,13 +370,15 @@
 					Experience Mumbai from a unique perspective with a thrilling helicopter joyride. 
 					Fly over the city's iconic landmarks such as the Gateway of India, Marine Drive, and 
 					the Bandra-Worli Sea Link for an unforgettable aerial adventure.
+					<br>
 					</p>
+
 			    </article>
+
 		  	</section>
 		</div>
-	</section>
-
-	<div class="footer">
+	</div>
+		<div class="footer" style="margin-top: 900x;">
 		<div class="footer-content">
 			<div class="footer-refs-content-1">
 				<h5>Tourism <b>Agencies</b></h5>
@@ -236,7 +391,7 @@
 			<div class="footer-refs-content-2">
 				<h5>Our <b>Partners</b></h5>
 	            <ul>
-	                <li><a href="agoda.com">Agoda</a></li>
+	                <li><a href="https://www.agoda.com">Agoda</a></li>
 	                <li><a href="mtdc.co">Maharashtra Tourism Development Corporation</a></li>
 	                <li><a href="https://www.arcgis.com/home/index.html">ArcGIS</a></li>
 	            </ul>
@@ -247,23 +402,21 @@
 	                <li><a href="">Terms & Conditions</a></li>
 	                <li><a href="">Privacy Policy</a></li>
 	                <li><a href="">Site Map</a></li>
-	                <li><a href="http://www.srilanka.travel"><img src="images/logo1.png" style="width: 150px;"></a></li>
+	                <li><a href="https://github.com/Aditya-y9/IGT"><img src="images/mylogo-1.png" style="width: 150px;"></a></li>
 	            </ul>
 			</div>
 		</div>
 		<div class="lower-footer">
 			<div class="lower-footer-content">
 				<div id="footer-align-left">
-					All Rights Reserved. © 2024 UnravelTravel
+					All Rights Reserved. © IGT 2024 | Designed by IGT
 				</div>
 				<div id="footer-align-right">
-					<a href=""><i class="fab fa-facebook-square fa-3x"></i></a>
-					<a href=""><i class="fab fa-twitter-square fa-3x"></i></a>
-					<a href=""><i class="fab fa-google-plus-square fa-3x"></i></a>
-					<a href=""><i class="fab fa-youtube-square fa-3x"></i></a>
+					<a href="https://github.com/Aditya-y9/IGT"><i class="fab fa-github-square fa-3x"></i></a>
 				</div>
 			</div>
 		</div>
 	</div>
 </body>
 </html>
+
