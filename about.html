@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+	
+	<link rel="icon" href="images/site-logo.png" />
+	<title>Welcome to Mumbai</title>
+</head>
+<body>	
+	<section>
+		<header>
+			<nav>
+				<div class="upper_navbar">
+					<div class="menu1">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About Us</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="lower_navbar">
+					<div class="lower_navbar_content">
+						<div class="menu-icon">
+							<i class="fas fa-bars fa-2x"></i>
+						</div>
+						<div class="logo">
+							<a href="index.html"><img src="images/mylogo-1.png" height="500"></a>
+						</div>
+
+						<ul class="dropdown-menu">
+							<li class="active" id="home"><a href="map.html">
+								Explore Mumbai on GIS
+							</li>
+							<li><a href="">What to do<i class="fas fa-caret-down"></i></a>
+								<ul>
+									<li><a href="activities.html">Activities</a></li>
+									<li><a href="events-and-festivals.html">Events & Festivals</a></li>
+								</ul>
+							</li>
+							<li><a href="">Where to go<i class="fas fa-caret-down"></i></a>
+								<ul>
+									<li><a href="attractions.html">Attractive Destinations</a></li>
+									<li><a href="locations.html">Landmarks & Other Places</a></li>
+								</ul>
+							</li>
+							<li><a href="">Plan your trip<i class="fas fa-caret-down"></i></a>
+								<ul>
+									<li><a href="accomodations.html">Book an Accomodation</a></li>
+									<li><a href="about-mumbai.html">About Mumbai</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div class="header-title">
+				<div id="index-title">Welcome to <span>Mumbai</span></div>
+				<div id="sub-title">Vigour the mind. Feel the thrills.</div>
+				<div id="title-button"><a href=""><i class="fas fa-chevron-down fa-2x"></i></a></div>
+			</div>
+		</header>
+	</section>
+
+    <div style="padding: 20px; background-color: #f2f2f2; padding: left 5px; margin-left: auto;">
+        <h1 style="font-size: 24px; font-weight: bold; margin-bottom: 10px;">About Us</h1>
+        <p style="margin-bottom: 20px;">
+            We are a group of students from the University of Mumbai who have come together to create a website that will help tourists and locals alike to explore the city of Mumbai. Our website is a one-stop destination for all the information you need to know about Mumbai. From the best places to visit to the best places to eat, we have it all. Our website is designed to be user-friendly and easy to navigate. We hope you enjoy using our website and that it helps you make the most of your time in Mumbai.
+        </p>
+        <div class="title">
+            <h1 class="font-color">Contributors</h1>
+            <div class="line"></div>
+        </div>
+
+        <style>
+            .concard{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 20px;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                background-color: #fff;
+                transition: all 0.3s;
+            }
+            .contributors{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                margin: 20px;
+            }
+            #contribution{
+                background-color: #f2f2f2;
+                padding: 20px;
+            }
+            .pfp{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                margin-bottom: 10px;
+            }
+            .text{
+                text-align: center;
+            }
+            .logolink{
+                margin-top: 10px;
+            }
+            .github-logo{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                transition: all 0.3s;
+            }
+            .github-logo:hover{
+                transform: scale(1.1);
+            }
+            .concard:hover {
+                background-color: #fb036b;
+                border-bottom: 5px solid #fff;
+                color: #fff;
+                transform: translateY(-7.5px);
+                transition: background-color 0.5s ease, transform 1s ease,
+                    border-bottom 0.5s ease 0.2s;
+                }
+        </style>
+        <section class="contributors" id="contribution">
+            <div class="concard">
+                <img
+                    src="https://github.com/Aditya-y9.png"
+                    alt="profile-picture"
+                    class="pfp"
+                />
+                <div class="text">
+                    <h1>Aditya Yedurkar</h1>
+                </div>
+                <div class="logolink">
+                    <a href="https://github.com/Aditya-y9" target="_blank"
+                        ><img
+                            src="images/GitHub.png"
+                            alt="Github-Logo"
+                            class="github-logo"
+                    /></a>
+                </div>
+            </div>
+            <div class="concard">
+                <img
+                    src="https://github.com/aditichhajed.png"
+                    alt="profile-picture"
+                    class="pfp"
+                />
+                <div class="text">
+                    <h1>Aditi Chhajed</h1>
+                </div>
+                <div class="logolink">
+                    <a href="https://github.com/aditichhajed" target="_blank"
+                        ><img
+                            src="images/GitHub.png"
+                            alt="Github-Logo"
+                            class="github-logo"
+                    /></a>
+                </div>
+            </div>
+
+
+            <div class="concard">
+                <img
+                    src="https://github.com/aryan110404.png"
+                    alt="profile-picture"
+                    class="pfp"
+                />
+                <div class="text">
+                    <h1>Aryan Zaveri</h1>
+                </div>
+                <div class="logolink">
+                    <a href="https://github.com/aryan110404" target="_blank"
+                        ><img
+                            src="images/GitHub.png"
+                            alt="Github-Logo"
+                            class="github-logo"
+                    /></a>
+                </div>
+            </div>
+
+            <div class="concard">
+                <img
+                    src="https://github.com/shonsolanke.png"
+                    alt="profile-picture"
+                    class="pfp"
+                />
+                <div class="text">
+                    <h1>Shon Solanke</h1>
+                </div>
+                <div class="logolink">
+                    <a href="https://github.com/shonsolanke" target="_blank"
+                        ><img
+                            src="images/GitHub.png"
+                            alt="Github-Logo"
+                            class="github-logo"
+                    /></a>
+                </div>
+            </div>
+
+	<script src="function.js"></script>
+
+</body>
+</html>
+
+
+

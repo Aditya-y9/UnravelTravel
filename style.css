@@ -10,6 +10,16 @@ header{
 	background-size: cover;
 	background-position: center center;
 	background-attachment: fixed;
+	animation: fadeBackground 2s ease-in-out;
+}
+
+@keyframes fadeBackground {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 nav{
 	width: 100%;
@@ -55,8 +65,8 @@ nav{
 	background-color: rgba(0,0,0,0.7);
 }
 .lower_navbar_content{
-	width: 85%;
-	margin: 0 auto;
+	width: 90%;
+	margin: 0;
 }
 .lower_navbar .logo{
 	float: right;
@@ -107,7 +117,7 @@ nav{
 	display: block;
 }
 .fas{
-	padding-left: 8px;
+	padding-left: 4px;
 }
 /*//////////////////////////Header title div\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 .header-title{
@@ -120,6 +130,7 @@ nav{
 	top: 45%;
 	left: 17.8%;
 	transform: (50%, 50%)
+	shadow: 5px 5px 10px black;
 }
 #main-title{
 	font-family: Roboto;
