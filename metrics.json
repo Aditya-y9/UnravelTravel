@@ -1,0 +1,12 @@
+{
+  "testDurationMs": 11029,
+  "totalRequests": 174692,
+  "successfulRequests": 174692,
+  "failedRequests": 0,
+  "requestsPerSecond": "15839.33",
+  "latencyStats": {
+    "averageMs": "2.86",
+    "minMs": 1,
+    "maxMs": 42
+  }
+}

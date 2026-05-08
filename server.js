@@ -3,7 +3,7 @@ const path = require('path');
 const app = express();
 const port = 3000;
 
-const publicDir = path.join(__dirname, '../../UnravelTravel');
+const publicDir = __dirname;
 const instrumentedDir = path.join(__dirname, 'instrumented');
 
 // Serve instrumented JS if it exists, otherwise serve from original
